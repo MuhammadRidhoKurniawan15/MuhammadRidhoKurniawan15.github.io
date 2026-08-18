@@ -6,12 +6,12 @@
 
     <title>Muhammad Ridho Kurniawan | Industrial Electrical Engineering</title>
 
-    <meta name="description" content="Professional portfolio of Muhammad Ridho Kurniawan, Industrial Electrical Engineering graduate from Politeknik Elektronika Negeri Surabaya.">
+    <meta name="description"
+          content="Professional portfolio of Muhammad Ridho Kurniawan, Industrial Electrical Engineering graduate from Politeknik Elektronika Negeri Surabaya.">
 
     <style>
+
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
@@ -20,10 +20,12 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f7f8fa;
-            color: #17202a;
-            line-height: 1.6;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #222222;
+            line-height: 1.7;
         }
 
         a {
@@ -33,382 +35,613 @@
 
         .container {
             width: 90%;
-            max-width: 1100px;
+            max-width: 900px;
             margin: auto;
         }
 
-        /* NAVBAR */
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(255,255,255,0.95);
-            border-bottom: 1px solid #e5e7eb;
-            backdrop-filter: blur(10px);
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            padding: 80px 0 55px;
         }
 
-        .nav-container {
-            height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-            font-size: 20px;
+        .profile-name {
+            font-size: 42px;
+            line-height: 1.15;
             font-weight: 700;
-            letter-spacing: -0.5px;
+            margin: 0 0 10px;
+            letter-spacing: -1px;
         }
 
-        .nav-links {
-            display: flex;
-            gap: 28px;
-            list-style: none;
-            font-size: 14px;
-        }
-
-        .nav-links a {
-            color: #4b5563;
-            transition: 0.2s;
-        }
-
-        .nav-links a:hover {
-            color: #111827;
-        }
-
-        /* HERO */
-        .hero {
-            min-height: 88vh;
-            display: flex;
-            align-items: center;
-        }
-
-        .hero-content {
-            max-width: 800px;
-        }
-
-        .tag {
-            display: inline-block;
-            padding: 7px 14px;
-            border: 1px solid #d1d5db;
-            border-radius: 999px;
-            font-size: 13px;
-            color: #4b5563;
-            margin-bottom: 25px;
-            background: white;
-        }
-
-        .hero h1 {
-            font-size: clamp(45px, 8vw, 78px);
-            line-height: 1.02;
-            letter-spacing: -4px;
+        .profile-title {
+            font-size: 18px;
+            color: #666666;
             margin-bottom: 25px;
         }
 
-        .hero h1 span {
-            color: #6b7280;
+        .profile-description {
+            max-width: 820px;
+            font-size: 16px;
+            color: #444444;
+            margin: 0;
         }
 
-        .hero-description {
-            max-width: 700px;
-            font-size: 19px;
-            color: #5b6470;
-            margin-bottom: 35px;
+        .profile-description strong {
+            color: #222222;
         }
 
-        .buttons {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
+        /* =========================
+           SECTIONS
+        ========================= */
 
-        .button {
-            padding: 13px 21px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            transition: 0.2s;
-        }
-
-        .button-primary {
-            background: #111827;
-            color: white;
-        }
-
-        .button-primary:hover {
-            background: #374151;
-        }
-
-        .button-secondary {
-            border: 1px solid #d1d5db;
-            background: white;
-        }
-
-        .button-secondary:hover {
-            background: #f3f4f6;
-        }
-
-        /* SECTIONS */
         section {
-            padding: 100px 0;
-            border-top: 1px solid #e5e7eb;
-        }
-
-        .section-label {
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #6b7280;
-            margin-bottom: 12px;
+            padding: 45px 0;
+            border-top: 1px solid #eeeeee;
         }
 
         .section-title {
-            font-size: 38px;
-            letter-spacing: -1.5px;
-            margin-bottom: 30px;
+            font-size: 27px;
+            font-weight: 700;
+            margin: 0 0 30px;
+            letter-spacing: -0.5px;
         }
 
-        .about-text {
-            max-width: 800px;
-            font-size: 18px;
-            color: #59636f;
+        /* =========================
+           EXPERIENCE
+        ========================= */
+
+        .experience {
+            margin-bottom: 50px;
         }
 
-        /* EDUCATION */
-        .timeline {
-            border-left: 2px solid #d1d5db;
-            padding-left: 28px;
+        .experience:last-child {
+            margin-bottom: 0;
         }
 
-        .timeline-item {
-            margin-bottom: 35px;
+        .experience-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 3px;
         }
 
-        .timeline-item h3 {
-            font-size: 21px;
-            margin-bottom: 5px;
-        }
-
-        .timeline-item .date {
+        .experience-meta {
+            color: #777777;
             font-size: 14px;
-            color: #6b7280;
-            margin-bottom: 8px;
-        }
-
-        /* PROJECT */
-        .project-card {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 16px;
-            padding: 35px;
-            transition: 0.25s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.07);
-        }
-
-        .project-card h3 {
-            font-size: 26px;
             margin-bottom: 15px;
         }
 
-        .project-card p {
-            color: #5b6470;
+        .experience-description {
+            color: #444444;
             margin-bottom: 20px;
         }
 
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
+        .sub-project {
+            margin: 25px 0;
+            padding-left: 18px;
+            border-left: 3px solid #eeeeee;
         }
 
-        .project-tag {
-            background: #f3f4f6;
-            padding: 6px 11px;
-            border-radius: 6px;
-            font-size: 12px;
-            color: #4b5563;
+        .sub-project-title {
+            font-size: 16px;
+            font-weight: 650;
+            margin-bottom: 7px;
         }
 
-        /* SKILLS */
+        .documentation {
+            color: #555555;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* =========================
+           PROJECTS
+        ========================= */
+
+        .project {
+            margin-bottom: 50px;
+        }
+
+        .project:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-title {
+            font-size: 21px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .project-meta {
+            color: #777777;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .project-description {
+            color: #444444;
+            margin-bottom: 15px;
+        }
+
+        .technologies {
+            font-size: 14px;
+            color: #555555;
+        }
+
+        .technologies strong {
+            color: #222222;
+        }
+
+        /* =========================
+           CERTIFICATES
+        ========================= */
+
+        .certificate {
+            margin-bottom: 35px;
+        }
+
+        .certificate-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .certificate-meta {
+            color: #777777;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .certificate-description {
+            color: #444444;
+        }
+
+        /* =========================
+           SKILLS
+        ========================= */
+
         .skills {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 10px 15px;
         }
 
         .skill {
-            background: white;
-            border: 1px solid #e5e7eb;
-            padding: 11px 16px;
-            border-radius: 8px;
-            font-size: 14px;
+            color: #333333;
+            font-size: 15px;
         }
 
-        /* CONTACT */
-        .contact-box {
-            background: #111827;
-            color: white;
-            padding: 45px;
-            border-radius: 16px;
+        .skill::after {
+            content: "  |";
+            color: #cccccc;
+            margin-left: 12px;
         }
 
-        .contact-box p {
-            color: #d1d5db;
-            max-width: 650px;
-            margin: 15px 0 25px;
+        .skill:last-child::after {
+            content: "";
         }
 
-        .contact-links {
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            padding-bottom: 70px;
+        }
+
+        .contact-list {
             display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
+            flex-direction: column;
+            gap: 8px;
         }
 
-        .contact-links a {
-            border: 1px solid #4b5563;
-            padding: 10px 15px;
-            border-radius: 7px;
-            font-size: 14px;
+        .contact-item {
+            font-size: 16px;
         }
 
-        /* FOOTER */
+        .contact-item a {
+            color: #444444;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .contact-item a:hover {
+            color: #000000;
+            border-color: #000000;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
         footer {
-            padding: 30px 0;
-            text-align: center;
+            border-top: 1px solid #eeeeee;
+            padding: 25px 0 35px;
+            color: #888888;
             font-size: 13px;
-            color: #6b7280;
         }
 
-        /* MOBILE */
-        @media (max-width: 700px) {
+        /* =========================
+           MOBILE
+        ========================= */
 
-            .nav-container {
-                height: auto;
-                padding: 18px 0;
-                align-items: flex-start;
+        @media (max-width: 650px) {
+
+            header {
+                padding: 55px 0 40px;
             }
 
-            .nav-links {
-                display: none;
+            .profile-name {
+                font-size: 34px;
             }
 
-            .hero {
-                min-height: 80vh;
-            }
-
-            .hero h1 {
-                font-size: 48px;
-                letter-spacing: -2px;
-            }
-
-            .hero-description {
-                font-size: 17px;
-            }
-
-            section {
-                padding: 70px 0;
+            .profile-title {
+                font-size: 16px;
             }
 
             .section-title {
-                font-size: 31px;
+                font-size: 24px;
             }
 
-            .project-card,
-            .contact-box {
-                padding: 25px;
+            section {
+                padding: 38px 0;
             }
+
+            .container {
+                width: 88%;
+            }
+
         }
+
     </style>
 </head>
 
+
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <div class="container nav-container">
+<div class="container">
 
-            <div class="logo">
-                MRK.
-            </div>
 
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <!-- =================================
+         PROFILE
+    ================================== -->
 
+    <header>
+
+        <h1 class="profile-name">
+            Muhammad Ridho Kurniawan
+        </h1>
+
+        <div class="profile-title">
+            Bachelor of Applied Industrial Electrical Engineering · PENS
         </div>
-    </nav>
 
+        <p class="profile-description">
 
-    <!-- HERO -->
-    <header class="hero">
-        <div class="container">
+            Industrial Electrical Engineering graduate from
+            <strong>Politeknik Elektronika Negeri Surabaya (PENS)</strong>
+            with an interest in control systems, automation, embedded systems,
+            instrumentation, and industrial electrical applications.
 
-            <div class="hero-content">
+            Experienced in developing academic engineering projects involving
+            microcontrollers, sensors, AC voltage control, MATLAB/Simulink,
+            PSIM, and Artificial Neural Network (ANN) based control systems.
 
-                <div class="tag">
-                    Industrial Electrical Engineering
-                </div>
+            Interested in contributing to reliable, efficient, and practical
+            engineering solutions.
 
-                <h1>
-                    Muhammad Ridho<br>
-                    <span>Kurniawan</span>
-                </h1>
+        </p>
 
-                <p class="hero-description">
-                    Engineering graduate focused on control systems,
-                    automation, embedded systems, and industrial electrical
-                    applications.
-                </p>
-
-                <div class="buttons">
-
-                    <a href="#projects" class="button button-primary">
-                        View Projects
-                    </a>
-
-                    <a href="#contact" class="button button-secondary">
-                        Contact Me
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
     </header>
 
 
-    <!-- ABOUT -->
-    <section id="about">
+    <!-- =================================
+         WORK EXPERIENCE
+    ================================== -->
 
-        <div class="container">
+    <section>
 
-            <div class="section-label">
-                01 — About
+        <h2 class="section-title">
+            💼 Work Experience
+        </h2>
+
+
+        <!-- Experience 1 -->
+
+        <div class="experience">
+
+            <div class="experience-title">
+                Industrial Electrical Engineering Experience
             </div>
 
-            <h2 class="section-title">
-                About Me
-            </h2>
+            <div class="experience-meta">
+                Academic & Project Experience · PENS
+            </div>
 
-            <p class="about-text">
-                I am an Industrial Electrical Engineering graduate from
-                Politeknik Elektronika Negeri Surabaya with an interest in
-                control systems, automation, embedded systems, and industrial
-                electrical engineering.
+            <p class="experience-description">
 
-                My academic and project experience includes developing
-                control systems, integrating sensors and microcontrollers,
-                and applying Artificial Neural Network techniques to
-                temperature control applications.
+                Developed and implemented electrical engineering systems
+                involving control, automation, instrumentation, embedded
+                systems, and data acquisition as part of academic and
+                final-year engineering activities.
+
+            </p>
+
+
+            <div class="sub-project">
+
+                <div class="sub-project-title">
+                    🔧 Embedded Control System Development
+                </div>
+
+                <p>
+                    Developed microcontroller-based control systems using
+                    STM32, integrating temperature and humidity sensors,
+                    measurement modules, DAC output, and HMI communication.
+                </p>
+
+            </div>
+
+
+            <div class="sub-project">
+
+                <div class="sub-project-title">
+                    ⚙️ AC Voltage Control System
+                </div>
+
+                <p>
+                    Designed an AC-AC voltage control system for heater
+                    applications using phase-angle control and TRIAC-based
+                    power electronics.
+                </p>
+
+            </div>
+
+
+            <div class="sub-project">
+
+                <div class="sub-project-title">
+                    🧠 Artificial Neural Network Control
+                </div>
+
+                <p>
+                    Developed an Artificial Neural Network controller for
+                    automatic temperature regulation and evaluated its
+                    performance through MATLAB/Simulink and PSIM simulation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Experience 2 -->
+
+        <div class="experience">
+
+            <div class="experience-title">
+                Final Project Development
+            </div>
+
+            <div class="experience-meta">
+                Undergraduate Final Project · 2026
+            </div>
+
+            <p class="experience-description">
+
+                Designed and developed an automatic spice drying machine
+                with temperature regulation using an Artificial Neural
+                Network (ANN) controller.
+
+            </p>
+
+            <div class="documentation">
+                📷 Project documentation will be added here.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         PROJECTS
+    ================================== -->
+
+    <section>
+
+        <h2 class="section-title">
+            🚀 Projects
+        </h2>
+
+
+        <!-- Project 1 -->
+
+        <div class="project">
+
+            <div class="project-title">
+                🔬 Automatic Spice Drying Machine
+            </div>
+
+            <div class="project-meta">
+                Undergraduate Final Project · 2026
+            </div>
+
+            <p class="project-description">
+
+                Rancang Bangun Mesin Pengering Rempah dengan Pengaturan
+                Suhu Otomatis Menggunakan Artificial Neural Network (ANN).
+
+                The system was developed to regulate drying temperature
+                automatically by integrating temperature and humidity
+                sensing, embedded control, AC voltage control, and an
+                Artificial Neural Network controller.
+
+            </p>
+
+            <p class="project-description">
+
+                The system integrates an STM32F446 Nucleo as the main
+                controller, SHT31-F for environmental measurement,
+                PZEM-004T for electrical monitoring, Nextion HMI for
+                user interaction, and a TRIAC-based AC voltage controller
+                for heater power regulation.
+
+            </p>
+
+            <div class="technologies">
+
+                <strong>Technologies:</strong>
+
+                STM32F446 · Artificial Neural Network · MATLAB ·
+                Simulink · PSIM · SHT31-F · PZEM-004T ·
+                Nextion HMI · TRIAC · Embedded Systems
+
+            </div>
+
+            <div class="documentation">
+                📷 Project documentation will be added here.
+            </div>
+
+        </div>
+
+
+        <!-- Project 2 -->
+
+        <div class="project">
+
+            <div class="project-title">
+                ⚡ AC-AC Voltage Controller
+            </div>
+
+            <div class="project-meta">
+                Electrical Control System Project
+            </div>
+
+            <p class="project-description">
+
+                Developed an AC voltage control system using phase-angle
+                control to regulate heater power. The system combines
+                a TCA785 firing-angle controller, MOC3021 optocoupler,
+                and BTA41 TRIAC.
+
+            </p>
+
+            <div class="technologies">
+
+                <strong>Technologies:</strong>
+
+                TCA785 · MOC3021 · BTA41 · LM358 · DAC ·
+                STM32 · Power Electronics
+
+            </div>
+
+        </div>
+
+
+        <!-- Project 3 -->
+
+        <div class="project">
+
+            <div class="project-title">
+                🧠 ANN-Based Temperature Control
+            </div>
+
+            <div class="project-meta">
+                MATLAB / Simulink · Control Engineering
+            </div>
+
+            <p class="project-description">
+
+                Developed and evaluated an Artificial Neural Network
+                controller for temperature regulation using simulation
+                models. Controller performance was evaluated through
+                rise time, overshoot, settling time, IAE, SSE, and
+                disturbance recovery.
+
+            </p>
+
+            <div class="technologies">
+
+                <strong>Technologies:</strong>
+
+                MATLAB · Simulink · ANN · MLP ·
+                Levenberg-Marquardt
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         PUBLICATIONS & CERTIFICATES
+    ================================== -->
+
+    <section>
+
+        <h2 class="section-title">
+            📜 Publications & Certificates
+        </h2>
+
+
+        <div class="certificate">
+
+            <div class="certificate-title">
+                📄 Final Project & Intellectual Property
+            </div>
+
+            <div class="certificate-meta">
+                2026
+            </div>
+
+            <p class="certificate-description">
+
+                Documentation related to the final project, intellectual
+                property submission, and supporting academic documents
+                will be presented in this section.
+
+            </p>
+
+        </div>
+
+
+        <div class="certificate">
+
+            <div class="certificate-title">
+                🏆 Professional & Technical Certifications
+            </div>
+
+            <div class="certificate-meta">
+                2026
+            </div>
+
+            <p class="certificate-description">
+
+                Selected technical certifications, training certificates,
+                and supporting credentials will be displayed here.
+
+            </p>
+
+        </div>
+
+
+        <div class="certificate">
+
+            <div class="certificate-title">
+                📚 Academic Publication
+            </div>
+
+            <div class="certificate-meta">
+                2026
+            </div>
+
+            <p class="certificate-description">
+
+                Research publication related to industrial electrical
+                engineering and control systems.
+
             </p>
 
         </div>
@@ -416,39 +649,116 @@
     </section>
 
 
-    <!-- EDUCATION -->
-    <section id="education">
+    <!-- =================================
+         SKILLS
+    ================================== -->
 
-        <div class="container">
+    <section>
 
-            <div class="section-label">
-                02 — Education
+        <h2 class="section-title">
+            🛠️ Skills
+        </h2>
+
+        <div class="skills">
+
+            <span class="skill">
+                Industrial Electrical Engineering
+            </span>
+
+            <span class="skill">
+                Control Systems
+            </span>
+
+            <span class="skill">
+                Automation
+            </span>
+
+            <span class="skill">
+                Embedded Systems
+            </span>
+
+            <span class="skill">
+                Instrumentation
+            </span>
+
+            <span class="skill">
+                Power Electronics
+            </span>
+
+            <span class="skill">
+                STM32
+            </span>
+
+            <span class="skill">
+                MATLAB
+            </span>
+
+            <span class="skill">
+                Simulink
+            </span>
+
+            <span class="skill">
+                PSIM
+            </span>
+
+            <span class="skill">
+                Proteus
+            </span>
+
+            <span class="skill">
+                Artificial Neural Network
+            </span>
+
+            <span class="skill">
+                Electrical Testing
+            </span>
+
+            <span class="skill">
+                System Analysis
+            </span>
+
+            <span class="skill">
+                Troubleshooting
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         CONTACT
+    ================================== -->
+
+    <section class="contact">
+
+        <h2 class="section-title">
+            📞 Contact
+        </h2>
+
+        <div class="contact-list">
+
+            <div class="contact-item">
+                📧 Email:
+                <a href="mailto:YOUR_EMAIL@gmail.com">
+                    YOUR_EMAIL@gmail.com
+                </a>
             </div>
 
-            <h2 class="section-title">
-                Education
-            </h2>
+            <div class="contact-item">
+                💼 LinkedIn:
+                <a href="https://www.linkedin.com/"
+                   target="_blank">
+                    LinkedIn Profile
+                </a>
+            </div>
 
-            <div class="timeline">
-
-                <div class="timeline-item">
-
-                    <h3>
-                        Politeknik Elektronika Negeri Surabaya
-                    </h3>
-
-                    <div class="date">
-                        Sarjana Terapan — Teknik Elektro Industri
-                    </div>
-
-                    <p>
-                        Focus areas include industrial electrical systems,
-                        control engineering, automation, instrumentation,
-                        and embedded systems.
-                    </p>
-
-                </div>
-
+            <div class="contact-item">
+                💻 GitHub:
+                <a href="https://github.com/MuhammadRidhoKurniawan15"
+                   target="_blank">
+                    MuhammadRidhoKurniawan15
+                </a>
             </div>
 
         </div>
@@ -456,147 +766,17 @@
     </section>
 
 
-    <!-- PROJECTS -->
-    <section id="projects">
+    <!-- =================================
+         FOOTER
+    ================================== -->
 
-        <div class="container">
-
-            <div class="section-label">
-                03 — Featured Project
-            </div>
-
-            <h2 class="section-title">
-                Selected Project
-            </h2>
-
-            <div class="project-card">
-
-                <h3>
-                    Automatic Spice Drying Machine
-                </h3>
-
-                <p>
-                    Rancang Bangun Mesin Pengering Rempah dengan Pengaturan
-                    Suhu Otomatis Menggunakan Artificial Neural Network (ANN).
-                </p>
-
-                <p>
-                    The project integrates temperature and humidity sensing,
-                    STM32-based embedded control, AC voltage control,
-                    human-machine interface, and Artificial Neural Network
-                    control for automatic temperature regulation.
-                </p>
-
-                <div class="tags">
-
-                    <span class="project-tag">STM32</span>
-                    <span class="project-tag">Artificial Neural Network</span>
-                    <span class="project-tag">MATLAB</span>
-                    <span class="project-tag">Simulink</span>
-                    <span class="project-tag">PSIM</span>
-                    <span class="project-tag">Embedded System</span>
-                    <span class="project-tag">Control System</span>
-                    <span class="project-tag">SHT31</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SKILLS -->
-    <section id="skills">
-
-        <div class="container">
-
-            <div class="section-label">
-                04 — Skills
-            </div>
-
-            <h2 class="section-title">
-                Technical Skills
-            </h2>
-
-            <div class="skills">
-
-                <div class="skill">Industrial Electrical Engineering</div>
-                <div class="skill">Control Systems</div>
-                <div class="skill">Automation</div>
-                <div class="skill">Embedded Systems</div>
-                <div class="skill">STM32</div>
-                <div class="skill">MATLAB</div>
-                <div class="skill">Simulink</div>
-                <div class="skill">PSIM</div>
-                <div class="skill">Proteus</div>
-                <div class="skill">Artificial Neural Network</div>
-                <div class="skill">Instrumentation</div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact">
-
-        <div class="container">
-
-            <div class="contact-box">
-
-                <div class="section-label">
-                    05 — Contact
-                </div>
-
-                <h2 class="section-title">
-                    Let's Connect
-                </h2>
-
-                <p>
-                    Interested in discussing engineering projects,
-                    automation, control systems, or professional opportunities?
-                    Feel free to get in touch.
-                </p>
-
-                <div class="contact-links">
-
-                    <a href="mailto:your-email@gmail.com">
-                        Email
-                    </a>
-
-                    <a href="https://www.linkedin.com/" target="_blank">
-                        LinkedIn
-                    </a>
-
-                    <a href="https://github.com/MuhammadRidhoKurniawan15"
-                       target="_blank">
-                        GitHub
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
     <footer>
 
-        <div class="container">
-
-            © 2026 Muhammad Ridho Kurniawan.
-            All rights reserved.
-
-        </div>
+        © 2026 Muhammad Ridho Kurniawan
 
     </footer>
+
+</div>
 
 </body>
 </html>
