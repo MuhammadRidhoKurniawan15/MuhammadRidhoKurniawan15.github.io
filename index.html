@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muhammad Ridho Kurniawan | Industrial Electrical Engineering</title>
+
+    <meta name="description" content="Professional portfolio of Muhammad Ridho Kurniawan, Industrial Electrical Engineering graduate from Politeknik Elektronika Negeri Surabaya.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f8fa;
+            color: #17202a;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.95);
+            border-bottom: 1px solid #e5e7eb;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            font-size: 14px;
+        }
+
+        .nav-links a {
+            color: #4b5563;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #111827;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 88vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 7px 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 999px;
+            font-size: 13px;
+            color: #4b5563;
+            margin-bottom: 25px;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 78px);
+            line-height: 1.02;
+            letter-spacing: -4px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #6b7280;
+        }
+
+        .hero-description {
+            max-width: 700px;
+            font-size: 19px;
+            color: #5b6470;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            padding: 13px 21px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .button-primary {
+            background: #111827;
+            color: white;
+        }
+
+        .button-primary:hover {
+            background: #374151;
+        }
+
+        .button-secondary {
+            border: 1px solid #d1d5db;
+            background: white;
+        }
+
+        .button-secondary:hover {
+            background: #f3f4f6;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 100px 0;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .section-label {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #6b7280;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 38px;
+            letter-spacing: -1.5px;
+            margin-bottom: 30px;
+        }
+
+        .about-text {
+            max-width: 800px;
+            font-size: 18px;
+            color: #59636f;
+        }
+
+        /* EDUCATION */
+        .timeline {
+            border-left: 2px solid #d1d5db;
+            padding-left: 28px;
+        }
+
+        .timeline-item {
+            margin-bottom: 35px;
+        }
+
+        .timeline-item h3 {
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item .date {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 8px;
+        }
+
+        /* PROJECT */
+        .project-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 35px;
+            transition: 0.25s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+        }
+
+        .project-card h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: #5b6470;
+            margin-bottom: 20px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .project-tag {
+            background: #f3f4f6;
+            padding: 6px 11px;
+            border-radius: 6px;
+            font-size: 12px;
+            color: #4b5563;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: white;
+            border: 1px solid #e5e7eb;
+            padding: 11px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        /* CONTACT */
+        .contact-box {
+            background: #111827;
+            color: white;
+            padding: 45px;
+            border-radius: 16px;
+        }
+
+        .contact-box p {
+            color: #d1d5db;
+            max-width: 650px;
+            margin: 15px 0 25px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .contact-links a {
+            border: 1px solid #4b5563;
+            padding: 10px 15px;
+            border-radius: 7px;
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            .nav-container {
+                height: auto;
+                padding: 18px 0;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                min-height: 80vh;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+                letter-spacing: -2px;
+            }
+
+            .hero-description {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .section-title {
+                font-size: 31px;
+            }
+
+            .project-card,
+            .contact-box {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container nav-container">
+
+            <div class="logo">
+                MRK.
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container">
+
+            <div class="hero-content">
+
+                <div class="tag">
+                    Industrial Electrical Engineering
+                </div>
+
+                <h1>
+                    Muhammad Ridho<br>
+                    <span>Kurniawan</span>
+                </h1>
+
+                <p class="hero-description">
+                    Engineering graduate focused on control systems,
+                    automation, embedded systems, and industrial electrical
+                    applications.
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#projects" class="button button-primary">
+                        View Projects
+                    </a>
+
+                    <a href="#contact" class="button button-secondary">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <div class="container">
+
+            <div class="section-label">
+                01 — About
+            </div>
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <p class="about-text">
+                I am an Industrial Electrical Engineering graduate from
+                Politeknik Elektronika Negeri Surabaya with an interest in
+                control systems, automation, embedded systems, and industrial
+                electrical engineering.
+
+                My academic and project experience includes developing
+                control systems, integrating sensors and microcontrollers,
+                and applying Artificial Neural Network techniques to
+                temperature control applications.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section id="education">
+
+        <div class="container">
+
+            <div class="section-label">
+                02 — Education
+            </div>
+
+            <h2 class="section-title">
+                Education
+            </h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <h3>
+                        Politeknik Elektronika Negeri Surabaya
+                    </h3>
+
+                    <div class="date">
+                        Sarjana Terapan — Teknik Elektro Industri
+                    </div>
+
+                    <p>
+                        Focus areas include industrial electrical systems,
+                        control engineering, automation, instrumentation,
+                        and embedded systems.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <div class="container">
+
+            <div class="section-label">
+                03 — Featured Project
+            </div>
+
+            <h2 class="section-title">
+                Selected Project
+            </h2>
+
+            <div class="project-card">
+
+                <h3>
+                    Automatic Spice Drying Machine
+                </h3>
+
+                <p>
+                    Rancang Bangun Mesin Pengering Rempah dengan Pengaturan
+                    Suhu Otomatis Menggunakan Artificial Neural Network (ANN).
+                </p>
+
+                <p>
+                    The project integrates temperature and humidity sensing,
+                    STM32-based embedded control, AC voltage control,
+                    human-machine interface, and Artificial Neural Network
+                    control for automatic temperature regulation.
+                </p>
+
+                <div class="tags">
+
+                    <span class="project-tag">STM32</span>
+                    <span class="project-tag">Artificial Neural Network</span>
+                    <span class="project-tag">MATLAB</span>
+                    <span class="project-tag">Simulink</span>
+                    <span class="project-tag">PSIM</span>
+                    <span class="project-tag">Embedded System</span>
+                    <span class="project-tag">Control System</span>
+                    <span class="project-tag">SHT31</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <div class="container">
+
+            <div class="section-label">
+                04 — Skills
+            </div>
+
+            <h2 class="section-title">
+                Technical Skills
+            </h2>
+
+            <div class="skills">
+
+                <div class="skill">Industrial Electrical Engineering</div>
+                <div class="skill">Control Systems</div>
+                <div class="skill">Automation</div>
+                <div class="skill">Embedded Systems</div>
+                <div class="skill">STM32</div>
+                <div class="skill">MATLAB</div>
+                <div class="skill">Simulink</div>
+                <div class="skill">PSIM</div>
+                <div class="skill">Proteus</div>
+                <div class="skill">Artificial Neural Network</div>
+                <div class="skill">Instrumentation</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="contact-box">
+
+                <div class="section-label">
+                    05 — Contact
+                </div>
+
+                <h2 class="section-title">
+                    Let's Connect
+                </h2>
+
+                <p>
+                    Interested in discussing engineering projects,
+                    automation, control systems, or professional opportunities?
+                    Feel free to get in touch.
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="mailto:your-email@gmail.com">
+                        Email
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        LinkedIn
+                    </a>
+
+                    <a href="https://github.com/MuhammadRidhoKurniawan15"
+                       target="_blank">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container">
+
+            © 2026 Muhammad Ridho Kurniawan.
+            All rights reserved.
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
