@@ -7,156 +7,23 @@
 <title>Muhammad Ridho Kurniawan | Engineering Portfolio</title>
 <style>
 :root{--bg:#0b0d10;--card:#12161b;--line:#29303a;--text:#f5f7fa;--muted:#a8b0ba;--accent:#8eafff;--max:1060px}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:74px}
-body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(var(--max),calc(100% - 32px));margin:auto}
-.nav{position:sticky;top:0;z-index:20;background:rgba(11,13,16,.94);border-bottom:1px solid var(--line)}
-.navin{height:60px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-weight:900;font-size:15px}.brand span{color:var(--accent)}
-.links{display:flex;gap:20px}.links a{font-size:12px;color:var(--muted);padding:8px 0}.links a:hover,.links a.active{color:var(--text)}
-.hero{padding:58px 0 44px}.hero-grid{display:grid;grid-template-columns:1fr 150px;gap:42px;align-items:center}
-.kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:800}
-h1{font-size:clamp(46px,7vw,76px);line-height:.96;letter-spacing:-.055em;margin:10px 0 16px;max-width:780px}
-.role{font-size:18px;color:#dce2e9}.summary{max-width:700px;color:var(--muted);margin:12px 0 0}
-.portrait{width:150px;height:190px;object-fit:cover;border-radius:18px;border:1px solid var(--line);background:#171b20}
-.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:9px 13px;border:1px solid var(--line);border-radius:9px;font-size:12px;font-weight:800;cursor:pointer}.btn:hover{border-color:#66707c;transform:translateY(-1px)}.primary{background:#fff;color:#0b0d10;border-color:#fff}
-section{border-top:1px solid var(--line);padding:42px 0;scroll-margin-top:74px}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:20px}h2{font-size:27px;letter-spacing:-.035em;margin:4px 0}.section-note{color:var(--muted);font-size:12px;max-width:480px;text-align:right}
-.highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.mini{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px}.mini b{display:block;font-size:21px}.mini span{font-size:11px;color:var(--muted)}
-.project{display:grid;grid-template-columns:1.2fr .8fr;gap:12px}.project-main,.project-side,.item,.ip-card,.training{background:var(--card);border:1px solid var(--line);border-radius:15px}.project-main{padding:22px}.project-main h3{font-size:24px;margin:7px 0 8px;line-height:1.15}.project-main p,.project-side p,.item p,.ip-card p,.training p{color:var(--muted);font-size:13px;margin:7px 0}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}.tag{font-size:10px;color:#d5dce5;border:1px solid #343c47;border-radius:999px;padding:4px 7px}.project-side{padding:20px}.project-side strong{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.1em}.project-side ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:12px}
-.timeline{display:grid;gap:0}.item{border-radius:0;border-left:0;border-right:0;border-bottom:0;padding:18px 0;background:transparent}.item:first-child{padding-top:0}.date{font-size:11px;color:var(--muted)}.item h3{margin:3px 0;font-size:17px}.sub{font-size:11px;color:var(--accent);font-weight:700}
-.ip{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.ip-card{padding:17px}.status{display:inline-block;font-size:9px;font-weight:900;letter-spacing:.05em;color:#b9caff;background:#192131;border-radius:999px;padding:4px 7px}.ip-card h3{font-size:15px;margin:10px 0 5px}
-.training{padding:18px}.training h3{margin:0 0 5px;font-size:17px}.training.current{border-color:#536b9e}.current-label{font-size:9px;font-weight:900;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
-.skills{display:flex;flex-wrap:wrap;gap:7px}.skill{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:11px;color:#dce2e8}
-.contact{display:flex;justify-content:space-between;align-items:center;gap:20px;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:22px}.contact h2{margin:0}.contact p{margin:5px 0 0;color:var(--muted);font-size:12px}
-footer{padding:30px 0 40px;color:#68727d;font-size:10px;text-align:center}
-@media(max-width:800px){.hero-grid,.project{grid-template-columns:1fr}.portrait{width:120px;height:150px}.highlights{grid-template-columns:repeat(2,1fr)}.ip{grid-template-columns:1fr}.section-note{text-align:left}.section-head{display:block}}
-@media(max-width:560px){.links{gap:11px}.links a{font-size:10px}.hero{padding-top:40px}h1{font-size:47px}.highlights{grid-template-columns:1fr 1fr}.contact{display:block}.contact .actions{margin-top:15px}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:74px}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 32px));margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(11,13,16,.94);border-bottom:1px solid var(--line)}.navin{height:60px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;font-size:15px}.brand span{color:var(--accent)}.links{display:flex;gap:20px}.links a{font-size:12px;color:var(--muted);padding:8px 0}.links a:hover,.links a.active{color:var(--text)}
+.hero{padding:58px 0 44px}.hero-grid{display:grid;grid-template-columns:1fr 150px;gap:42px;align-items:center}.kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:800}h1{font-size:clamp(46px,7vw,76px);line-height:.96;letter-spacing:-.055em;margin:10px 0 16px;max-width:780px}.role{font-size:18px;color:#dce2e9}.summary{max-width:700px;color:var(--muted);margin:12px 0 0}.portrait{width:150px;height:190px;object-fit:cover;border-radius:18px;border:1px solid var(--line);background:#171b20}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:9px 13px;border:1px solid var(--line);border-radius:9px;font-size:12px;font-weight:800;cursor:pointer}.btn:hover{border-color:#66707c;transform:translateY(-1px)}.primary{background:#fff;color:#0b0d10;border-color:#fff}
+section{border-top:1px solid var(--line);padding:42px 0;scroll-margin-top:74px}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:20px}h2{font-size:27px;letter-spacing:-.035em;margin:4px 0}.section-note{color:var(--muted);font-size:12px;max-width:480px;text-align:right}.highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.mini{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px}.mini b{display:block;font-size:21px}.mini span{font-size:11px;color:var(--muted)}
+.project{display:grid;grid-template-columns:1.2fr .8fr;gap:12px}.project-main,.project-side,.item,.ip-card,.training{background:var(--card);border:1px solid var(--line);border-radius:15px}.project-main{padding:22px}.project-main h3{font-size:24px;margin:7px 0 8px;line-height:1.15}.project-main p,.project-side p,.item p,.ip-card p,.training p{color:var(--muted);font-size:13px;margin:7px 0}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}.tag{font-size:10px;color:#d5dce5;border:1px solid #343c47;border-radius:999px;padding:4px 7px}.project-side{padding:20px}.project-side strong{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.1em}.project-side ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:12px}.timeline{display:grid;gap:0}.item{border-radius:0;border-left:0;border-right:0;border-bottom:0;padding:18px 0;background:transparent}.item:first-child{padding-top:0}.date{font-size:11px;color:var(--muted)}.item h3{margin:3px 0;font-size:17px}.sub{font-size:11px;color:var(--accent);font-weight:700}.ip{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.ip-card{padding:17px}.status{display:inline-block;font-size:9px;font-weight:900;letter-spacing:.05em;color:#b9caff;background:#192131;border-radius:999px;padding:4px 7px}.ip-card h3{font-size:15px;margin:10px 0 5px}.training{padding:18px}.training h3{margin:0 0 5px;font-size:17px}.training.current{border-color:#536b9e}.current-label{font-size:9px;font-weight:900;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}.skills{display:flex;flex-wrap:wrap;gap:7px}.skill{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:11px;color:#dce2e8}.contact{display:flex;justify-content:space-between;align-items:center;gap:20px;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:22px}.contact h2{margin:0}.contact p{margin:5px 0 0;color:var(--muted);font-size:12px}footer{padding:30px 0 40px;color:#68727d;font-size:10px;text-align:center}
+@media(max-width:800px){.hero-grid,.project{grid-template-columns:1fr}.portrait{width:120px;height:150px}.highlights{grid-template-columns:repeat(2,1fr)}.ip{grid-template-columns:1fr}.section-note{text-align:left}.section-head{display:block}}@media(max-width:560px){.links{gap:11px}.links a{font-size:10px}.hero{padding-top:40px}h1{font-size:47px}.highlights{grid-template-columns:1fr 1fr}.contact{display:block}.contact .actions{margin-top:15px}}
 </style>
 </head>
 <body>
-<nav class="nav">
-  <div class="wrap navin">
-    <a class="brand" href="#top" aria-label="Back to top">MRK<span>.</span></a>
-    <div class="links" aria-label="Main navigation">
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#ip">Research & IP</a>
-      <a href="#training">Training</a>
-    </div>
-  </div>
-</nav>
-
+<nav class="nav"><div class="wrap navin"><a class="brand" href="#top" aria-label="Back to top">MRK<span>.</span></a><div class="links" aria-label="Main navigation"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#ip">Research & IP</a><a href="#training">Training</a></div></div></nav>
 <main id="top">
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="kicker">Industrial Electrical Engineering</div>
-      <h1>Muhammad Ridho Kurniawan</h1>
-      <div class="role">Instrumentation & Control · Automation · Electrical Maintenance</div>
-      <p class="summary">D4 Industrial Electrical Engineering graduate of Politeknik Elektronika Negeri Surabaya (PENS), GPA 3.56. Focused on industrial maintenance, embedded control, PLC/SCADA, power-system analysis and ANN-based temperature control.</p>
-      <div class="actions">
-        <a class="btn primary" href="#work">View project ↓</a>
-        <a class="btn" href="https://github.com/MuhammadRidhoKurniawan15" target="_blank" rel="noopener">GitHub ↗</a>
-        <a class="btn" href="https://www.linkedin.com/in/muhammad-ridho-kurniawan" target="_blank" rel="noopener">LinkedIn ↗</a>
-      </div>
-    </div>
-    <img class="portrait" src="assets/profile.svg" alt="Muhammad Ridho Kurniawan">
-  </div>
-</header>
-
-<section id="work">
-<div class="wrap">
-  <div class="section-head"><div><div class="kicker">01 / Selected work</div><h2>What I built</h2></div><div class="section-note">A concise view of the most relevant engineering project for an industrial or automation role.</div></div>
-  <div class="project">
-    <article class="project-main">
-      <div class="kicker">Final project · Embedded control</div>
-      <h3>Automatic Spice Dryer with ANN Temperature Control</h3>
-      <p>Designed and implemented an automatic drying system using an Artificial Neural Network controller for temperature regulation. The system integrates STM32F446, SHT31-F, PZEM-004T, Nextion HMI and TRIAC-based AC voltage control.</p>
-      <div class="tags"><span class="tag">STM32F446</span><span class="tag">ANN</span><span class="tag">MATLAB</span><span class="tag">SHT31-F</span><span class="tag">PZEM-004T</span><span class="tag">Nextion HMI</span><span class="tag">TRIAC</span></div>
-    </article>
-    <aside class="project-side">
-      <strong>Engineering scope</strong>
-      <ul><li>Embedded control & sensor integration</li><li>ANN modelling and implementation</li><li>AC voltage control for heater</li><li>HMI monitoring and electrical measurement</li><li>Closed-loop temperature testing</li></ul>
-    </aside>
-  </div>
-  <div class="highlights" style="margin-top:10px">
-    <div class="mini"><b>3.56</b><span>Final GPA</span></div>
-    <div class="mini"><b>STM32</b><span>Embedded controller</span></div>
-    <div class="mini"><b>ANN</b><span>Temperature control</span></div>
-    <div class="mini"><b>PLC/SCADA</b><span>Industrial automation</span></div>
-  </div>
-</div>
-</section>
-
-<section id="experience">
-<div class="wrap">
-  <div class="section-head"><div><div class="kicker">02 / Experience</div><h2>Industrial exposure</h2></div><div class="section-note">Relevant experience presented briefly so HRD can scan the timeline quickly.</div></div>
-  <div class="timeline">
-    <article class="item"><div class="date">Mar 2025 – Jun 2025</div><div><h3>Electrical Maintenance Intern</h3><div class="sub">PT Inti Luhur Fuja Abadi · Pasuruan</div><p>Industrial electrical maintenance exposure, troubleshooting and operational support in a production environment.</p></div></article>
-    <article class="item"><div class="date">2024 – 2025</div><div><h3>Industrial Electrical Engineering Projects</h3><div class="sub">PENS</div><p>Developed embedded, control and automation projects involving PLC, SCADA, instrumentation, electrical measurement and ANN-based control.</p></div></article>
-  </div>
-</div>
-</section>
-
-<section id="ip">
-<div class="wrap">
-  <div class="section-head"><div><div class="kicker">03 / Research & IP</div><h2>Work in progress</h2></div><div class="section-note">Status labels are intentionally conservative. In-process work is not presented as granted or published.</div></div>
-  <div class="ip">
-    <article class="ip-card"><span class="status">IN PROCESS</span><h3>HKI — ANN Temperature Control Program</h3><p>Software copyright documentation for the STM32F4 ANN temperature-control program.</p></article>
-    <article class="ip-card"><span class="status">DRAFTING</span><h3>Industrial Design Patent</h3><p>Drafting stage for the industrial design related to the automatic spice drying machine.</p></article>
-    <article class="ip-card"><span class="status">UNDER REVIEW</span><h3>Kinetik UMM Research Article</h3><p>Research article comparing PID and ANN controllers for TRIAC-based oven temperature control.</p></article>
-  </div>
-</div>
-</section>
-
-<section id="training">
-<div class="wrap">
-  <div class="section-head"><div><div class="kicker">04 / Training</div><h2>Professional development</h2></div></div>
-  <div class="training current"><div class="current-label">Currently attending</div><h3>Instrumentation & Control Engineering Bootcamp</h3><p>Teknik Academy · Live online training · August 2026 · Instrumentation, control engineering and practical calculation topics.</p></div>
-  <div class="training" style="margin-top:9px"><h3>Electrical Calculation and Power System Study Using Excel and ETAP</h3><p>Teknik Academy · Completed July 2026 · Electrical load list, cable sizing, grounding, UPS/battery sizing, ETAP load flow, short circuit, motor starting, protection coordination and arc-flash study.</p></div>
-</div>
-</section>
-
-<section id="skills">
-<div class="wrap">
-  <div class="section-head"><div><div class="kicker">05 / Skills</div><h2>Technical toolkit</h2></div></div>
-  <div class="skills">
-    <span class="skill">MATLAB / Simulink</span><span class="skill">STM32</span><span class="skill">C / Embedded C</span><span class="skill">PLC</span><span class="skill">SCADA</span><span class="skill">Electrical Maintenance</span><span class="skill">Instrumentation</span><span class="skill">ETAP</span><span class="skill">PSIM</span><span class="skill">Proteus</span><span class="skill">Nextion HMI</span><span class="skill">Electrical Measurement</span>
-  </div>
-</div>
-</section>
-
-<section id="contact">
-<div class="wrap">
-  <div class="contact"><div><h2>Let's connect.</h2><p>For engineering, automation, instrumentation or electrical opportunities.</p></div><div class="actions"><a class="btn primary" href="mailto:muhammadridho.kurniawan15@gmail.com">Email ↗</a><a class="btn" href="https://www.linkedin.com/in/muhammad-ridho-kurniawan" target="_blank" rel="noopener">LinkedIn ↗</a></div></div>
-</div>
-</section>
-</main>
-<footer>© 2026 Muhammad Ridho Kurniawan · Engineering Portfolio</footer>
-<script>
-// Keep navigation predictable: every menu item scrolls within this single page.
-document.querySelectorAll('a[href^="#"]').forEach(link=>{
-  link.addEventListener('click',e=>{
-    const id=link.getAttribute('href');
-    const target=document.querySelector(id);
-    if(!target)return;
-    e.preventDefault();
-    target.scrollIntoView({behavior:'smooth',block:'start'});
-    history.replaceState(null,'',id);
-  });
-});
-const sections=[...document.querySelectorAll('main section[id]')];
-const navLinks=[...document.querySelectorAll('.links a')];
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));
-    }
-  });
-},{rootMargin:'-35% 0px -55% 0px'});
-sections.forEach(s=>observer.observe(s));
-</script>
-</body>
-</html>
+<header class="hero"><div class="wrap hero-grid"><div><div class="kicker">Industrial Electrical Engineering</div><h1>Muhammad Ridho Kurniawan</h1><div class="role">Instrumentation & Control · Automation · Electrical Maintenance</div><p class="summary">D4 Industrial Electrical Engineering graduate of Politeknik Elektronika Negeri Surabaya (PENS), GPA 3.56. Focused on industrial maintenance, embedded control, PLC/SCADA, power-system analysis and ANN-based temperature control.</p><div class="actions"><a class="btn primary" href="#work">View project ↓</a><a class="btn" href="https://github.com/MuhammadRidhoKurniawan15" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/in/muhammad-ridho-kurniawan" target="_blank" rel="noopener">LinkedIn ↗</a></div></div><img class="portrait" src="assets/profile_exact.svg" alt="Muhammad Ridho Kurniawan"></div></header>
+<section id="work"><div class="wrap"><div class="section-head"><div><div class="kicker">01 / Selected work</div><h2>What I built</h2></div><div class="section-note">A concise view of the most relevant engineering project for an industrial or automation role.</div></div><div class="project"><article class="project-main"><div class="kicker">Final project · Embedded control</div><h3>Automatic Spice Dryer with ANN Temperature Control</h3><p>Designed and implemented an automatic drying system using an Artificial Neural Network controller for temperature regulation. The system integrates STM32F446, SHT31-F, PZEM-004T, Nextion HMI and TRIAC-based AC voltage control.</p><div class="tags"><span class="tag">STM32F446</span><span class="tag">ANN</span><span class="tag">MATLAB</span><span class="tag">SHT31-F</span><span class="tag">PZEM-004T</span><span class="tag">Nextion HMI</span><span class="tag">TRIAC</span></div></article><aside class="project-side"><strong>Engineering scope</strong><ul><li>Embedded control & sensor integration</li><li>ANN modelling and implementation</li><li>AC voltage control for heater</li><li>HMI monitoring and electrical measurement</li><li>Closed-loop temperature testing</li></ul></aside></div><div class="highlights" style="margin-top:10px"><div class="mini"><b>3.56</b><span>Final GPA</span></div><div class="mini"><b>STM32</b><span>Embedded controller</span></div><div class="mini"><b>ANN</b><span>Temperature control</span></div><div class="mini"><b>PLC/SCADA</b><span>Industrial automation</span></div></div></div></section>
+<section id="experience"><div class="wrap"><div class="section-head"><div><div class="kicker">02 / Experience</div><h2>Industrial exposure</h2></div><div class="section-note">Relevant experience presented briefly so HRD can scan the timeline quickly.</div></div><div class="timeline"><article class="item"><div class="date">Mar 2025 – Jun 2025</div><div><h3>Electrical Maintenance Intern</h3><div class="sub">PT Inti Luhur Fuja Abadi · Pasuruan</div><p>Industrial electrical maintenance exposure, troubleshooting and operational support in a production environment.</p></div></article><article class="item"><div class="date">2024 – 2025</div><div><h3>Industrial Electrical Engineering Projects</h3><div class="sub">PENS</div><p>Developed embedded, control and automation projects involving PLC, SCADA, instrumentation, electrical measurement and ANN-based control.</p></div></article></div></div></section>
+<section id="ip"><div class="wrap"><div class="section-head"><div><div class="kicker">03 / Research & IP</div><h2>Work in progress</h2></div><div class="section-note">Status labels are intentionally conservative. In-process work is not presented as granted or published.</div></div><div class="ip"><article class="ip-card"><span class="status">IN PROCESS</span><h3>HKI — ANN Temperature Control Program</h3><p>Software copyright documentation for the STM32F4 ANN temperature-control program.</p></article><article class="ip-card"><span class="status">DRAFTING</span><h3>Industrial Design Patent</h3><p>Drafting stage for the industrial design related to the automatic spice drying machine.</p></article><article class="ip-card"><span class="status">UNDER REVIEW</span><h3>Kinetik UMM Research Article</h3><p>Research article comparing PID and ANN controllers for TRIAC-based oven temperature control.</p></article></div></div></section>
+<section id="training"><div class="wrap"><div class="section-head"><div><div class="kicker">04 / Training</div><h2>Professional development</h2></div></div><div class="training current"><div class="current-label">Currently attending</div><h3>Instrumentation & Control Engineering Bootcamp</h3><p>Teknik Academy · Live online training · August 2026 · Instrumentation, control engineering and practical calculation topics.</p></div><div class="training" style="margin-top:9px"><h3>Electrical Calculation and Power System Study Using Excel and ETAP</h3><p>Teknik Academy · Completed July 2026 · Electrical load list, cable sizing, grounding, UPS/battery sizing, ETAP load flow, short circuit, motor starting, protection coordination and arc-flash study.</p></div></div></section>
+<section id="skills"><div class="wrap"><div class="section-head"><div><div class="kicker">05 / Skills</div><h2>Technical toolkit</h2></div></div><div class="skills"><span class="skill">MATLAB / Simulink</span><span class="skill">STM32</span><span class="skill">C / Embedded C</span><span class="skill">PLC</span><span class="skill">SCADA</span><span class="skill">Electrical Maintenance</span><span class="skill">Instrumentation</span><span class="skill">ETAP</span><span class="skill">PSIM</span><span class="skill">Proteus</span><span class="skill">Nextion HMI</span><span class="skill">Electrical Measurement</span></div></div></section>
+<section id="contact"><div class="wrap"><div class="contact"><div><h2>Let's connect.</h2><p>For engineering, automation, instrumentation or electrical opportunities.</p></div><div class="actions"><a class="btn primary" href="mailto:muhammadridho.kurniawan15@gmail.com">Email ↗</a><a class="btn" href="https://www.linkedin.com/in/muhammad-ridho-kurniawan" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div></section>
+</main><footer>© 2026 Muhammad Ridho Kurniawan · Engineering Portfolio</footer>
+<script>document.querySelectorAll('a[href^="#"]').forEach(link=>{link.addEventListener('click',e=>{const id=link.getAttribute('href'),target=document.querySelector(id);if(!target)return;e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});history.replaceState(null,'',id);});});const sections=[...document.querySelectorAll('main section[id]')],navLinks=[...document.querySelectorAll('.links a')];const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));});},{rootMargin:'-35% 0px -55% 0px'});sections.forEach(s=>observer.observe(s));</script>
+</body></html>
