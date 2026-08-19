@@ -1,0 +1,1 @@
+Project documentation images are shown as clickable thumbnails in the project card.
